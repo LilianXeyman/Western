@@ -31,7 +31,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 9176111145331108914}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -147,6 +146,7 @@ GameObject:
   - component: {fileID: 7944988834660897940}
   - component: {fileID: 994188831493897166}
   - component: {fileID: 8092554358114398521}
+  - component: {fileID: 4555579666166405920}
   m_Layer: 5
   m_Name: GoodGuy
   m_TagString: Untagged
@@ -168,7 +168,6 @@ RectTransform:
   m_Children:
   - {fileID: 3527894102573816992}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -256,4 +255,42 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 994188831493897166}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 4555579666166405920}
+        m_TargetAssemblyTypeName: InicioPartida, Assembly-CSharp
+        m_MethodName: GoodGuy
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &4555579666166405920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8441409734470388454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fad9c4befc5b2974498645529aeda442, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inicioPartida: {fileID: 0}
+  finalPartida: {fileID: 0}
+  textTiempo: {fileID: 0}
+  RewardAchieved: {fileID: 0}
+  textcuentaReward: {fileID: 0}
+  Machango: {fileID: 0}
+  Targets:
+  - {fileID: 3394762290031110355, guid: 57e2ed3523eeab5428b90886ed4740a1, type: 3}
+  - {fileID: 7824531490125340672, guid: 6a1524416d996ea49afff2ddd19326fa, type: 3}
+  - {fileID: 8441409734470388454}
+  - {fileID: 6409816238651152363, guid: 49f5002e1799bb640a090f26fdf5a920, type: 3}
+  - {fileID: 2555527943923984785, guid: 9703159b0ee4434478b09f3d4747e4b7, type: 3}
+  Destinos: []
+  Objetivo: {fileID: 0}
